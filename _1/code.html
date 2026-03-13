@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary": "#a855f7",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0a0f1e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-glow {
+            text-shadow: 0 0 30px rgba(13, 204, 242, 0.5), 0 0 60px rgba(168, 85, 247, 0.3);
+        }
+        .hover-glow:hover {
+            box-shadow: 0 0 20px rgba(13, 204, 242, 0.2);
+            border-color: rgba(13, 204, 242, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 glass-card">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">rocket_launch</span>
+<h2 class="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">WebTech</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary text-sm font-semibold tracking-wide border-b-2 border-primary pb-1" href="#">Главная</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium" href="#">Технологии</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium" href="#">Ресурсы</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-background-dark px-5 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105 active:scale-95">
+                        Contact
+                    </button>
+<div class="h-8 w-8 rounded-full bg-gradient-to-tr from-primary to-secondary p-[1px]">
+<div class="h-full w-full rounded-full bg-background-dark flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">person</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden px-4">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]"></div>
+</div>
+<div class="relative z-10 max-w-4xl text-center">
+<h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tighter hero-glow mb-6 bg-gradient-to-br from-white via-primary to-secondary bg-clip-text text-transparent">
+                    Современные веб-технологии
+                </h1>
+<p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Изучите <b><i><u>передовые решения</u></i></b> для создания высокопроизводительных и масштабируемых цифровых продуктов нового поколения.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-8 py-4 bg-primary text-background-dark font-black rounded-xl shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-1">
+                        Начать обучение
+                    </button>
+<button class="w-full sm:w-auto px-8 py-4 glass-card text-white font-bold rounded-xl hover:bg-white/5 transition-all">
+                        Узнать больше
+                    </button>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-4 py-24">
+<div class="flex flex-col items-center mb-16 text-center">
+<h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">Наши направления</h2>
+<div class="h-1.5 w-24 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card hover-glow p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2 cursor-pointer relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/5 rounded-full group-hover:bg-primary/10 transition-colors"></div>
+<div class="mb-6 h-14 w-14 rounded-xl bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">code</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white">HTML5 &amp; CSS3</h3>
+<p class="text-slate-400 leading-relaxed mb-6">
+                        Профессиональная верстка и современная стилизация с использованием Flexbox, Grid и современных анимаций.
+                    </p>
+<div class="flex items-center text-primary font-semibold text-sm">
+                        Подробнее <span class="material-symbols-outlined text-sm ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="glass-card hover-glow p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2 cursor-pointer relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-secondary/5 rounded-full group-hover:bg-secondary/10 transition-colors"></div>
+<div class="mb-6 h-14 w-14 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">javascript</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white">JS &amp; Frameworks</h3>
+<p class="text-slate-400 leading-relaxed mb-6">
+                        Разработка динамических интерфейсов на React, Vue и Angular с использованием современных паттернов.
+                    </p>
+<div class="flex items-center text-secondary font-semibold text-sm">
+                        Подробнее <span class="material-symbols-outlined text-sm ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="glass-card hover-glow p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2 cursor-pointer relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/5 rounded-full group-hover:bg-primary/10 transition-colors"></div>
+<div class="mb-6 h-14 w-14 rounded-xl bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">database</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white">Backend &amp; APIs</h3>
+<p class="text-slate-400 leading-relaxed mb-6">
+                        Построение надежных серверных архитектур на Node.js и Python с проектированием RESTful API.
+                    </p>
+<div class="flex items-center text-primary font-semibold text-sm">
+                        Подробнее <span class="material-symbols-outlined text-sm ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-4 py-20 mb-20">
+<div class="glass-card rounded-3xl p-8 md:p-16 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+<div class="w-full h-full bg-gradient-to-l from-primary to-transparent"></div>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-black mb-6 leading-tight">Почему выбирают <span class="text-primary">нас</span></h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="h-10 w-10 flex-shrink-0 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Glassmorphism Design</h4>
+<p class="text-slate-400 text-sm">Современный интерфейс с эффектом матового стекла и глубокими тенями.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="h-10 w-10 flex-shrink-0 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">High Performance</h4>
+<p class="text-slate-400 text-sm">Оптимизация скорости загрузки до миллисекунд для лучшего UX.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="h-10 w-10 flex-shrink-0 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Scalability</h4>
+<p class="text-slate-400 text-sm">Готовность к высоким нагрузкам и архитектура для быстрого роста.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-video rounded-2xl overflow-hidden glass-card p-2">
+<div class="w-full h-full bg-slate-800/50 rounded-xl relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-white/20 group-hover:scale-125 transition-transform">monitoring</span>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-6 -left-6 glass-card p-4 rounded-xl border-primary/30 flex items-center gap-3">
+<div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-background-dark font-bold">99%</div>
+<span class="text-xs font-bold uppercase tracking-widest text-slate-300">Uptime Rate</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-white/5 py-12 px-4 glass-card mt-auto">
+<div class="max-w-7xl mx-auto flex flex-col items-center gap-6">
+<div class="flex items-center gap-2 opacity-50">
+<span class="material-symbols-outlined text-primary text-xl">rocket_launch</span>
+<span class="text-sm font-bold tracking-tight">WebTech</span>
+</div>
+<p class="text-slate-500 text-sm text-center">
+                © 2026 — Самостоятельная работа по Web-технологиям
+            </p>
+<div class="flex gap-4 opacity-40">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">terminal</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">data_object</span></a>
+</div>
+</div>
+</footer>
+</body></html>

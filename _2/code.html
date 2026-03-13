@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0dccf2",
+                        "secondary": "#a855f7",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0a1214",
+                        "accent-dark": "#162a2e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(22, 42, 46, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0dccf2 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 glass border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-4">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">WebTech</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors text-slate-600 dark:text-slate-300" href="#">Главная</a>
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="#">Технологии</a>
+<a class="text-sm font-medium hover:text-primary transition-colors text-slate-600 dark:text-slate-300" href="#">Тренды</a>
+<a class="text-sm font-medium hover:text-primary transition-colors text-slate-600 dark:text-slate-300" href="#">Контакты</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+<input class="bg-accent-dark/50 border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary w-48 text-white" placeholder="Поиск..." type="text"/>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-background-dark px-4 py-2 rounded-lg text-sm font-bold transition-all">
+                        Войти
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+<!-- Hero Section -->
+<section class="mb-16">
+<h1 class="text-4xl md:text-6xl font-black mb-4 gradient-text">Технологический стек 2024</h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg max-w-2xl">Глубокое погружение в современные инструменты разработки, от фундаментальных основ до децентрализованных решений будущего.</p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+<!-- 1. Ordered List: Stages -->
+<div class="space-y-6">
+<h2 class="text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">history_edu</span>
+                    Этапы развития веб-технологий
+                </h2>
+<ol class="space-y-6 relative before:absolute before:left-6 before:top-2 before:bottom-2 before:w-0.5 before:bg-gradient-to-b before:from-primary before:to-secondary">
+<li class="relative pl-16">
+<div class="absolute left-0 top-0 size-12 rounded-full glass flex items-center justify-center text-primary font-bold border-primary/50 border shadow-[0_0_15px_rgba(13,204,242,0.3)]">1</div>
+<h3 class="text-lg font-bold text-white">Web 1.0 — Эра чтения</h3>
+<p class="text-slate-400 text-sm mt-1">Статические HTML-страницы, гостевые книги и начало цифровой эры. Контент создавался немногими для многих.</p>
+</li>
+<li class="relative pl-16">
+<div class="absolute left-0 top-0 size-12 rounded-full glass flex items-center justify-center text-secondary font-bold border-secondary/50 border shadow-[0_0_15px_rgba(168,85,247,0.3)]">2</div>
+<h3 class="text-lg font-bold text-white">Web 2.0 — Эра участия</h3>
+<p class="text-slate-400 text-sm mt-1">Социальные сети, облачные вычисления и динамический контент. Пользователи стали создателями контента.</p>
+</li>
+<li class="relative pl-16">
+<div class="absolute left-0 top-0 size-12 rounded-full glass flex items-center justify-center text-white font-bold border-white/50 border">3</div>
+<h3 class="text-lg font-bold text-white">Web 3.0 — Эра владения</h3>
+<p class="text-slate-400 text-sm mt-1">Блокчейн, децентрализованные протоколы и искусственный интеллект. Интернет с упором на приватность и право собственности.</p>
+</li>
+</ol>
+</div>
+<!-- 2. Unordered List: Popular Tech -->
+<div class="space-y-6">
+<h2 class="text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">verified</span>
+                    Популярные технологии
+                </h2>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<li class="glass p-4 rounded-xl flex items-center gap-4 hover:border-primary/50 transition-all group">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">frame_inspect</span>
+</div>
+<span class="font-medium">React</span>
+</li>
+<li class="glass p-4 rounded-xl flex items-center gap-4 hover:border-primary/50 transition-all group">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">layers</span>
+</div>
+<span class="font-medium">Vue.js</span>
+</li>
+<li class="glass p-4 rounded-xl flex items-center gap-4 hover:border-primary/50 transition-all group">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">change_history</span>
+</div>
+<span class="font-medium">Angular</span>
+</li>
+<li class="glass p-4 rounded-xl flex items-center gap-4 hover:border-primary/50 transition-all group">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">javascript</span>
+</div>
+<span class="font-medium">Node.js</span>
+</li>
+<li class="glass p-4 rounded-xl flex items-center gap-4 hover:border-primary/50 transition-all group">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<span class="font-medium">Python Django</span>
+</li>
+<li class="glass p-4 rounded-xl flex items-center gap-4 hover:border-primary/50 transition-all group">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined">code</span>
+</div>
+<span class="font-medium">TypeScript</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- 3. Comparison Table -->
+<section class="space-y-6 overflow-hidden">
+<h2 class="text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">analytics</span>
+                Сравнительный анализ
+            </h2>
+<div class="overflow-x-auto rounded-xl glass border border-white/10">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-accent-dark/80 text-primary border-b border-white/10">
+<th class="p-4 font-bold text-sm uppercase tracking-wider">Технология</th>
+<th class="p-4 font-bold text-sm uppercase tracking-wider">Год</th>
+<th class="p-4 font-bold text-sm uppercase tracking-wider">Тип</th>
+<th class="p-4 font-bold text-sm uppercase tracking-wider">Популярность</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<tr class="hover:bg-white/5 transition-colors">
+<td class="p-4 font-medium flex items-center gap-2">React</td>
+<td class="p-4 text-slate-400">2013</td>
+<td class="p-4"><span class="px-2 py-1 rounded bg-primary/20 text-primary text-xs">Frontend</span></td>
+<td class="p-4">
+<div class="w-full bg-accent-dark h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[94%]"></div>
+</div>
+</td>
+</tr>
+<tr class="bg-white/5 hover:bg-white/10 transition-colors">
+<td class="p-4 font-medium flex items-center gap-2">Node.js</td>
+<td class="p-4 text-slate-400">2009</td>
+<td class="p-4"><span class="px-2 py-1 rounded bg-secondary/20 text-secondary text-xs">Backend</span></td>
+<td class="p-4">
+<div class="w-full bg-accent-dark h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[88%]"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="p-4 font-medium flex items-center gap-2">TypeScript</td>
+<td class="p-4 text-slate-400">2012</td>
+<td class="p-4"><span class="px-2 py-1 rounded bg-white/10 text-slate-300 text-xs">Language</span></td>
+<td class="p-4">
+<div class="w-full bg-accent-dark h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[91%]"></div>
+</div>
+</td>
+</tr>
+<tr class="bg-white/5 hover:bg-white/10 transition-colors">
+<td class="p-4 font-medium flex items-center gap-2">Vue.js</td>
+<td class="p-4 text-slate-400">2014</td>
+<td class="p-4"><span class="px-2 py-1 rounded bg-primary/20 text-primary text-xs">Frontend</span></td>
+<td class="p-4">
+<div class="w-full bg-accent-dark h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[76%]"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="p-4 font-medium flex items-center gap-2">Django</td>
+<td class="p-4 text-slate-400">2005</td>
+<td class="p-4"><span class="px-2 py-1 rounded bg-secondary/20 text-secondary text-xs">Backend</span></td>
+<td class="p-4">
+<div class="w-full bg-accent-dark h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[82%]"></div>
+</div>
+</td>
+</tr>
+<tr class="bg-white/5 hover:bg-white/10 transition-colors">
+<td class="p-4 font-medium flex items-center gap-2">Angular</td>
+<td class="p-4 text-slate-400">2016</td>
+<td class="p-4"><span class="px-2 py-1 rounded bg-primary/20 text-primary text-xs">Frontend</span></td>
+<td class="p-4">
+<div class="w-full bg-accent-dark h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[65%]"></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-accent-dark/50 border-t border-white/10 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">rocket_launch</span>
+<span class="text-xl font-bold">WebTech</span>
+</div>
+<p class="text-slate-400 text-sm max-w-sm">Ваш путеводитель по миру современных веб-технологий. Мы анализируем рынок, изучаем тренды и делимся экспертизой с 2018 года.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-primary">Ресурсы</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Документация</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Блог</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Курсы</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Сообщество</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-primary">Компания</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">О нас</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Карьера</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Контакты</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+<p>© 2024 WebTech Education. Все права защищены.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="hover:text-primary transition-colors" href="#">Telegram</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

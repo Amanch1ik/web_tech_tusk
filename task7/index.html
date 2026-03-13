@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Главная страница мини-сайта: Современные веб-технологии. Обзор фронтенд и бэкенд технологий.">
+    <title>Главная — Современные веб-технологии</title>
+    <link rel="icon" href="../shared/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../shared/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <span class="material-symbols-outlined icon">deployed_code</span>
+                <span>WebTech</span>
+            </a>
+            <div class="navbar-links">
+                <a href="index.html" class="active">Главная</a>
+                <a href="technologies.html">Технологии</a>
+                <a href="resources.html">Ресурсы</a>
+            </div>
+            <button class="navbar-burger" aria-label="Меню"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg"><div class="glow-1"></div><div class="glow-2"></div></div>
+        <div class="hero-content">
+            <div class="task-badge">
+                <span class="material-symbols-outlined">auto_awesome</span>
+                Вариант 20
+            </div>
+            <h1>Современные <span class="gradient-text">веб-технологии</span></h1>
+            <p class="subtitle">
+                Изучите <b><i><u>передовые решения</u></i></b> для создания высокопроизводительных
+                и масштабируемых цифровых продуктов нового поколения.
+            </p>
+            <div class="progress-bar">
+                <div class="progress-track"><div class="progress-fill" style="width: 100%"></div></div>
+                <span class="progress-label">7 / 7</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <nav class="breadcrumbs">
+            <a href="../index.html">Все задания</a>
+            <span class="sep">›</span>
+            <span class="current">Задание 7 — Мини-сайт</span>
+        </nav>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon indigo"><span class="material-symbols-outlined">code</span></div>
+                <h3>HTML5 и CSS3</h3>
+                <p>Основа любого веб-сайта. HTML5 отвечает за структуру контента, а CSS3 — за визуальное оформление, анимации и адаптивный дизайн.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon cyan"><span class="material-symbols-outlined">data_object</span></div>
+                <h3>JavaScript и фреймворки</h3>
+                <p>JavaScript делает страницы интерактивными. Фреймворки React, Vue.js, Angular ускоряют разработку сложных приложений.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon green"><span class="material-symbols-outlined">dns</span></div>
+                <h3>Backend и API</h3>
+                <p>Серверная часть на Node.js, Python, PHP обрабатывает данные. REST API и GraphQL обеспечивают обмен данными.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon indigo"><span class="material-symbols-outlined">info</span></div>
+                <span class="card-title">Введение</span>
+            </div>
+            <p>
+                <b>Современные веб-технологии</b> — это совокупность инструментов, языков
+                программирования, фреймворков и платформ, используемых для создания
+                <i>веб-сайтов</i> и <i>веб-приложений</i>. Эти технологии постоянно развиваются,
+                предлагая разработчикам все более мощные и удобные решения.
+            </p>
+            <p>
+                Веб прошел долгий путь от простых статических страниц до сложных интерактивных
+                приложений. Сегодня <b>веб-приложения</b> способны конкурировать с настольными
+                программами по функциональности, скорости и удобству использования.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon cyan"><span class="material-symbols-outlined">account_tree</span></div>
+                <span class="card-title">Основные направления</span>
+            </div>
+            <h3>Фронтенд (клиентская часть)</h3>
+            <p>
+                <u>Фронтенд</u> отвечает за все, что видит пользователь в браузере. Основные
+                технологии: <b>HTML5</b> для структуры, <b>CSS3</b> для оформления и
+                <b>JavaScript</b> для интерактивности. Современные фреймворки —
+                <i>React</i>, <i>Vue.js</i>, <i>Angular</i> — значительно ускоряют разработку.
+            </p>
+            <h3>Бэкенд (серверная часть)</h3>
+            <p>
+                <u>Бэкенд</u> обеспечивает логику приложения, работу с базами данных и
+                обработку запросов. Популярные технологии: <b>Node.js</b>, <b>Python</b>
+                (Django, Flask), <b>PHP</b> (Laravel), <b>Java</b> (Spring Boot), <b>Go</b>.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon green"><span class="material-symbols-outlined">timeline</span></div>
+                <span class="card-title">Этапы развития веб-технологий</span>
+            </div>
+            <ol>
+                <li><b>Web 1.0</b> — статические HTML-страницы (1991-2000)</li>
+                <li><b>Web 2.0</b> — динамические сайты, AJAX, социальные сети (2000-2010)</li>
+                <li><b>Web 3.0</b> — семантический веб, AI, децентрализация (2010-наст. время)</li>
+                <li>Появление одностраничных приложений (SPA)</li>
+                <li>Мобильный веб и адаптивный дизайн</li>
+                <li>Прогрессивные веб-приложения (PWA)</li>
+                <li>Бессерверная архитектура и облачные платформы</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="logo"><span class="material-symbols-outlined">deployed_code</span><span>WebTech</span></div>
+            <p>Автор: <a href="https://github.com/Amanch1ik" target="_blank">Amanch1ik</a></p>
+            <div class="footer-links">
+                <a href="index.html"><span class="material-symbols-outlined">home</span></a>
+                <a href="technologies.html"><span class="material-symbols-outlined">terminal</span></a>
+                <a href="resources.html"><span class="material-symbols-outlined">menu_book</span></a>
+                <a href="https://github.com/Amanch1ik" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-top" id="scrollTop"><span class="material-symbols-outlined">keyboard_arrow_up</span></button>
+    <script src="../shared/script.js"></script>
+</body>
+</html>

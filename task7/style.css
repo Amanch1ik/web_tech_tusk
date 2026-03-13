@@ -1,0 +1,172 @@
+/* ========== Общие стили ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+/* ========== Шапка (Header) ========== */
+header {
+    background: linear-gradient(135deg, #1a73e8, #6c5ce7);
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* ========== Навигация ========== */
+nav {
+    background-color: #2d3748;
+    padding: 0;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+/* ========== Основное содержание ========== */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ========== Заголовки ========== */
+h1 {
+    color: #1a73e8;
+}
+
+h2 {
+    color: #2d3748;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-left: 4px solid #1a73e8;
+    padding-left: 12px;
+}
+
+h3 {
+    color: #6c5ce7;
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+/* ========== Параграфы ========== */
+p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* ========== Списки ========== */
+ul, ol {
+    margin: 10px 0 15px 25px;
+}
+
+li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+/* ========== Таблица ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th {
+    background-color: #1a73e8;
+    color: #ffffff;
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f0f4ff;
+}
+
+/* ========== Изображения ========== */
+.image-block {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-block img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-block .caption {
+    font-size: 13px;
+    color: #718096;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* ========== Ссылки ========== */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Подвал (Footer) ========== */
+footer {
+    background-color: #2d3748;
+    color: #a0aec0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+footer a {
+    color: #90cdf4;
+}

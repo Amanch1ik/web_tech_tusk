@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Самостоятельная работа по дисциплине Web-технологии. 7 заданий по теме: Современные веб-технологии. Вариант 20.">
+    <title>Самостоятельная работа — Web-технологии</title>
+    <link rel="icon" href="shared/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="shared/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+    <style>
+        .tasks-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .task-link {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 26px;
+            text-decoration: none;
+            transition: all var(--transition);
+            animation: fadeUp 0.6s ease both;
+        }
+        .task-link:hover {
+            border-color: var(--border-hover);
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-3px);
+        }
+        .task-link:nth-child(2) { animation-delay: 0.06s; }
+        .task-link:nth-child(3) { animation-delay: 0.12s; }
+        .task-link:nth-child(4) { animation-delay: 0.18s; }
+        .task-link:nth-child(5) { animation-delay: 0.24s; }
+        .task-link:nth-child(6) { animation-delay: 0.30s; }
+        .task-link:nth-child(7) { animation-delay: 0.36s; }
+        .task-num {
+            width: 46px; height: 46px; border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; font-size: 18px; font-weight: 900;
+            transition: all var(--transition);
+        }
+        .task-link:hover .task-num { transform: scale(1.1) rotate(2deg); }
+        .task-num.n1 { background: var(--primary-soft); color: var(--primary); }
+        .task-num.n2 { background: var(--accent-soft); color: var(--accent); }
+        .task-num.n3 { background: var(--green-soft); color: var(--green); }
+        .task-num.n4 { background: var(--rose-soft); color: var(--rose); }
+        .task-num.n5 { background: rgba(217,119,6,0.08); color: var(--amber); }
+        .task-num.n6 { background: var(--primary-soft); color: var(--primary); }
+        .task-num.n7 { background: var(--accent-soft); color: var(--accent); }
+        .task-info h3 { margin: 0 0 5px; font-size: 16px; color: var(--text-heading); }
+        .task-info h3::before { display: none; }
+        .task-info p { margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.55; text-align: left; }
+        .task-link.full-width { grid-column: 1 / -1; }
+        @media (max-width: 768px) { .tasks-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <span class="material-symbols-outlined icon">deployed_code</span>
+                <span>WebTech</span>
+            </a>
+            <div class="navbar-links">
+                <a href="task7/index.html">Главная</a>
+                <a href="task7/technologies.html">Технологии</a>
+                <a href="task7/resources.html">Ресурсы</a>
+            </div>
+            <button class="navbar-burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg"><div class="glow-1"></div><div class="glow-2"></div></div>
+        <div class="hero-content">
+            <div class="task-badge">
+                <span class="material-symbols-outlined">auto_awesome</span>
+                Вариант 20
+            </div>
+            <h1>Современные <span class="gradient-text">веб-технологии</span></h1>
+            <p class="subtitle">Самостоятельная работа по дисциплине Web-технологии. 7 заданий по теме варианта.</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="tasks-grid">
+            <a href="task1/index.html" class="task-link">
+                <div class="task-num n1">1</div>
+                <div class="task-info">
+                    <h3>Основы HTML-структуры</h3>
+                    <p>Теги html, head, title, body. Простая веб-страница с заголовком и текстом.</p>
+                </div>
+            </a>
+            <a href="task2/index.html" class="task-link">
+                <div class="task-num n2">2</div>
+                <div class="task-info">
+                    <h3>Форматирование текста</h3>
+                    <p>Теги h1-h3, p, b, i, u. Краткая информация по теме варианта.</p>
+                </div>
+            </a>
+            <a href="task3/index.html" class="task-link">
+                <div class="task-num n3">3</div>
+                <div class="task-info">
+                    <h3>Списки HTML</h3>
+                    <p>Нумерованный (ol) и маркированный (ul) списки по теме варианта.</p>
+                </div>
+            </a>
+            <a href="task4/index.html" class="task-link">
+                <div class="task-num n4">4</div>
+                <div class="task-info">
+                    <h3>Таблица HTML</h3>
+                    <p>Таблица (table, tr, td, th) с характеристиками и сравнением технологий.</p>
+                </div>
+            </a>
+            <a href="task5/index.html" class="task-link">
+                <div class="task-num n5">5</div>
+                <div class="task-info">
+                    <h3>Изображение и ссылка</h3>
+                    <p>Теги img и a. Изображение с описанием и гиперссылки по теме.</p>
+                </div>
+            </a>
+            <a href="task6/index.html" class="task-link">
+                <div class="task-num n6">6</div>
+                <div class="task-info">
+                    <h3>CSS-оформление</h3>
+                    <p>Подключение CSS: цвет текста, фон страницы, стиль заголовков.</p>
+                </div>
+            </a>
+            <a href="task7/index.html" class="task-link full-width">
+                <div class="task-num n7">7</div>
+                <div class="task-info">
+                    <h3>Мини-сайт (HTML + CSS)</h3>
+                    <p>Полноценный мини-сайт из 3 связанных страниц: Главная, Технологии, Ресурсы.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="logo">
+                <span class="material-symbols-outlined">deployed_code</span>
+                <span>WebTech</span>
+            </div>
+            <p>Автор: <a href="https://github.com/Amanch1ik" target="_blank">Amanch1ik</a></p>
+            <div class="footer-links">
+                <a href="https://github.com/Amanch1ik" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+    </button>
+    <script src="shared/script.js"></script>
+</body>
+</html>

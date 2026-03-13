@@ -1,0 +1,46 @@
+/* Фон страницы */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Стиль основного заголовка */
+h1 {
+    color: #1a73e8;
+    text-align: center;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 10px;
+}
+
+/* Стиль подзаголовков */
+h2 {
+    color: #34a853;
+    margin-top: 25px;
+}
+
+h3 {
+    color: #ea4335;
+    margin-top: 20px;
+}
+
+/* Стиль параграфов */
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Стиль списков */
+ul {
+    background-color: #ffffff;
+    padding: 15px 15px 15px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    margin-bottom: 8px;
+}
