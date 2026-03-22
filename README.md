@@ -21,7 +21,7 @@
     ├── script.js
     └── favicon.svg
 ```
-
+ 
 ## Технологии 
 
 - HTML5
