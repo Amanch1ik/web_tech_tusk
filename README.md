@@ -33,5 +33,5 @@
 ```bash
 npx -y http-server ./ -p 3003 -c-1 
 ```
-
+ 
 Затем открыть `http://localhost:3003`
