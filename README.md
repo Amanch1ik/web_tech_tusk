@@ -15,7 +15,7 @@
 ├── task7/                   # Задание 7 — Мини-сайт (3 страницы) 
 │   ├── index.html
 │   ├── technologies.html
-│   └── resources.html
+│   └── resources.html 
 └── shared/ 
     ├── style.css 
     ├── script.js
