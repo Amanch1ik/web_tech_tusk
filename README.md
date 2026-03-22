@@ -16,7 +16,7 @@
 │   ├── index.html
 │   ├── technologies.html
 │   └── resources.html
-└── shared/
+└── shared/ 
     ├── style.css 
     ├── script.js
     └── favicon.svg
