@@ -17,7 +17,7 @@
 │   ├── technologies.html
 │   └── resources.html
 └── shared/
-    ├── style.css
+    ├── style.css 
     ├── script.js
     └── favicon.svg
 ```
